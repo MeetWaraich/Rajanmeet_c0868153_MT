@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:text="@string/car_rent_service"
         android:textColor="#191970"
         android:textStyle="bold"
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="25dp"
             android:entries="@array/cars_array"
             android:gravity="center_horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,14 +44,27 @@
         android:textSize="15sp"
         android:hint="@string/daily_rent"
         android:inputType="number"/>
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="15dp"
-        android:layout_marginStart="10dp"
-        android:text="@string/how_many_days_you_want_to_rent"
-        android:textSize="20sp" />
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="@string/how_many_days_you_want_to_rent"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/day"
+            android:layout_marginStart="20dp"
+            android:hint="Days:"
+            android:inputType="number"/>
+
+    </LinearLayout>
     <SeekBar
         android:id="@+id/days"
         android:layout_width="match_parent"
@@ -68,7 +81,102 @@
         android:gravity="center"
         android:layout_marginTop="15dp"
         android:layout_marginStart="10dp"
-        android:text="Driver's Age:"
+        android:text="@string/driver_age"
         android:textSize="22sp" />
+    <RadioGroup
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/age_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/less_than_20_years"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/ageBtw21_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/between_21_and_60"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/above60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/above_60"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/options"
+        android:textSize="22sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <CheckBox
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gps"
+            android:textSize="20sp" />
+        <CheckBox
+            android:id="@+id/childSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/child_seat"
+            android:textSize="20sp" />
+        <CheckBox
+            android:id="@+id/unlimitedMilage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unlimited_milage"
+            android:orientation="horizontal"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:autofillHints="@string/amt"
+            android:textSize="15sp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:autofillHints="Total Payment:"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/viewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/view_details" />
 
 </LinearLayout>

@@ -3,12 +3,13 @@
     <string-array name="cars_array">
         <item>Mercedes</item>
         <item>Mustang</item>
-        <item>Honda</item>
-<!--        <item>Blue</item>-->
-<!--        <item>Purple</item>-->
-<!--        <item>Pink</item>-->
-<!--        <item>Yellow</item>-->
-<!--        <item>Green</item>-->
-<!--        <item>Orange</item>-->
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Cadillac</item>
+        <item>Mini Cooper</item>
+        <item>G Wagon</item>
+        <item>Range Rover</item>
+        <item>Tata Nano</item>
+        <item>Tesla</item>
     </string-array>
 </resources>
