@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carModel"
+        android:layout_marginStart="20dp"
+        android:hint="@string/car_model"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rentedDays"
+        android:layout_marginStart="20dp"
+        android:hint="@string/rented_days"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageGroup"
+        android:layout_marginStart="20dp"
+        android:hint="@string/age_group"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount_cost"
+        android:layout_marginStart="20dp"
+        android:hint="@string/cost_of_rent"
+        android:inputType="text"/>
+
+
+
+
+</LinearLayout>

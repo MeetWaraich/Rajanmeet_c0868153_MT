@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#F0FFFF"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/day"
             android:layout_marginStart="20dp"
-            android:hint="Days:"
+            android:hint="@string/days"
             android:inputType="number"/>
 
     </LinearLayout>
@@ -152,7 +152,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/amt"
+            android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
@@ -161,12 +162,13 @@
             android:autofillHints="@string/amt"
             android:textSize="15sp" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/totalAmount"
+            android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:inputType="number"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="250dp"
             android:autofillHints="Total Payment:"
             android:textSize="15sp" />
     </LinearLayout>

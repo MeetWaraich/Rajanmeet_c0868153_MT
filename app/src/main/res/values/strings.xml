@@ -13,4 +13,9 @@
     <string name="unlimited_milage">Unlimited Milage</string>
     <string name="amt">Amount</string>
     <string name="view_details">View Details</string>
+    <string name="days">Days:</string>
+    <string name="rented_days">Rented Days</string>
+    <string name="age_group">Age Group:</string>
+    <string name="car_model">Car Model</string>
+    <string name="cost_of_rent">Cost of Rent</string>
 </resources>
