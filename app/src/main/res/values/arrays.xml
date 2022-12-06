@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cars_array">
+        <item>Mercedes</item>
+        <item>Mustang</item>
+        <item>Honda</item>
+<!--        <item>Blue</item>-->
+<!--        <item>Purple</item>-->
+<!--        <item>Pink</item>-->
+<!--        <item>Yellow</item>-->
+<!--        <item>Green</item>-->
+<!--        <item>Orange</item>-->
+    </string-array>
+</resources>
